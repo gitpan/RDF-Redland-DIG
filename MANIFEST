@@ -1,0 +1,10 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/test.t
+t/pods.t
+t/pod_coverage.t
+lib/RDF/Redland/DIG.pm
+lib/RDF/Redland/DIG/KB.pm
+META.yml                                 Module meta-data (added by MakeMaker)
