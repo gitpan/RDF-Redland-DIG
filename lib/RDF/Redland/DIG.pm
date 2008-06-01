@@ -112,9 +112,11 @@ Copyright 2008 by Lara Spendier and Robert Barta
 This library is free software; you can redistribute it and/or modify it under the same terms as Perl
 itself.
 
+Work supported by the Austrian Research Centers Seibersdorf (Smart Systems).
+
 =cut
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 1;
 

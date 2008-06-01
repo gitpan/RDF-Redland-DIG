@@ -1,5 +1,8 @@
 Revision history for Perl extension RDF::Redland::DIG.
 
+0.02  Sun Jun  1 13:06:31 CEST 2008
+	- established credits for ARCS (rho)
+
 0.01  Sat May 31 13:36:45 CEST 2008
 	- first working alpha version (lara)
 	- probing for ua in test suite (rho)
