@@ -7,4 +7,5 @@ t/pods.t
 t/pod_coverage.t
 lib/RDF/Redland/DIG.pm
 lib/RDF/Redland/DIG/KB.pm
+lib/RDF/Redland/DIG/Tutorial.pm
 META.yml                                 Module meta-data (added by MakeMaker)

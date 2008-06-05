@@ -1,5 +1,8 @@
 Revision history for Perl extension RDF::Redland::DIG.
 
+0.03  Thu Jun  5 20:47:38 CEST 2008
+	- added tutorial (lara)
+
 0.02  Sun Jun  1 13:06:31 CEST 2008
 	- established credits for ARCS (rho)
 
