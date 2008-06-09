@@ -116,7 +116,7 @@ Work supported by the Austrian Research Centers Seibersdorf (Smart Systems).
 
 =cut
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 1;
 

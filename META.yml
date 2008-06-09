@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                RDF-Redland-DIG
-version:             0.03
+version:             0.04
 abstract:            DIG extension for Redland RDF (Reasoner)
 license:             ~
 author:              

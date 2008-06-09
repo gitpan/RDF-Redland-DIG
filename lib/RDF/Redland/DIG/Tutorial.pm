@@ -29,33 +29,33 @@ Before we can start with using the reasoning services, we have to create an
 RDF::Redland::Model to host the data. In the following, I created a simple test ontology inspired by
 the Prot√©g©pizza ontology (L<http://protege.stanford.edu>).
   
-  @prefix owl  "http://www.w3.org/2002/07/owl#"
-  @prefix xsd  "http://www.w3.org/2001/XMLSchema#"
-  @prefix rdfs "http://www.w3.org/2000/01/rdf-schema#"
-  @prefix rdf  "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  @prefix owl  <http://www.w3.org/2002/07/owl#> .
+  @prefix xsd  <http://www.w3.org/2001/XMLSchema#> .
+  @prefix rdfs <http://www.w3.org/2000/01/rdf-schema#>.
+  @prefix rdf  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
   
-  Pizza            isa    owl:Class.
-  PizzaTopping     isa    owl:Class.
+  Pizza            a    owl:Class.
+  PizzaTopping     a    owl:Class.
   
-  CheesePizza      isa    owl:Class;
+  CheesePizza      a    owl:Class;
                    rdfs:subClassOf Pizza.
-  ProsciuttoPizza  isa    owl:Class;
+  ProsciuttoPizza  a    owl:Class;
                    rdfs:subClassOf Pizza.
 
-  CheeseTopping    isa    owl:Class;
+  CheeseTopping    a    owl:Class;
                    rdfs:subClassOf PizzaTopping.
-  HamTopping       isa    owl:Class;
+  HamTopping       a    owl:Class;
                    rdfs:subClassOf PizzaTopping.
-  TomatoTopping    isa    owl:Class;
+  TomatoTopping    a    owl:Class;
                    rdfs:subclassOf PizzaTopping.
     
-  hasIngredient    isa           owl:ObjectProperty;
+  hasIngredient    a           owl:ObjectProperty;
                    owl:inverseOf isIngredientOf.
   hasTopping       rdfs:subPropertyOf hasIngredient;
                    owl:inverseOf isToppingOf;
                    rdfs:domain   Pizza;
                    rdfs:range    PizzaTopping.
-  isIngredientOf   isa           owl:ObjectProperty;
+  isIngredientOf   a           owl:ObjectProperty;
                    owl:inverseOf hasIngredient.
   isToppingOf      rdfs:subPropertyOf isIngredientOf;
                    owl:inverseOf hasTopping;
@@ -64,9 +64,9 @@ the Prot√©g©pizza ontology (L<http://protege.stanford.edu>).
 
 Apart from the ontological information, we can also add some instance data to play with:
 
-  Margharita       isa         CheesePizza;
+  Margharita       a         CheesePizza;
                    hasTopping  MozarellaTopping.
-  MozarellaTopping isa         CheeseTopping;
+  MozarellaTopping a         CheeseTopping;
                    isToppingOf Margharita.
 
 =head1 The Model
@@ -260,5 +260,7 @@ Copyright 2008 by Lara Spendier and Robert Barta
 Creative Commons Licence L<http://creativecommons.org/licenses/by/2.0/at/>
 
 =cut
+
+our $VERSION = '0.03';
 
 1;
